@@ -1,0 +1,66 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Test JQ</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+    <link href="App_Themes/Deafult/af.ui.min.css" rel="stylesheet" />
+    <link href="App_Themes/Deafult/af.ui.css" rel="stylesheet" />
+    <link rel="stylesheet" href="App_Themes/Deafult/icons.css" />
+    <script type="text/javascript" src="js/appframework.min.js"></script>
+    <script type="text/javascript" src="js/appframework.ui.js"></script>
+    <script type="text/javascript" src="js/af.plugins.min.js"></script>
+</head>
+<body>
+    <div id="afui" class="ios7">
+        <div id="content">
+            <div class="panel" id="home" selected="true" data-header="custom_header" data-footer="custom_footer" data-nav="main_nav" data-tab="footer_home">
+                欢迎来到英雄联盟
+            </div>
+            <div class="panel" id="android" data-header="custom_header" data-footer="custom_footer" data-nav="android_nav" data-tab="footer_android">
+                欢迎来到Dota 2
+            </div>
+        </div>
+        <header id="custom_header">
+            <a class="button icon home" onclick="af.ui.toggleSideMenu()"></a>
+            <a class="button icon user" onclick="af.ui.toggleSideMenu()"></a>
+        </header>
+        <footer id="custom_footer">
+            <a id="footer_home" href="#home" class="icon info">英雄联盟</a>
+            <a id="footer_android" href="#android" class="icon info">Dota 2</a>
+        </footer>
+        <nav id="main_nav">
+            <div>
+                英雄联盟
+            </div>
+            <ul class="list">
+                <li>
+                    <a href="" class="icon home mini">出装</a>
+                </li>
+                <li>
+                    <a href="" class="icon home mini">符文</a>
+                </li>
+                <li>
+                    <a href="" class="icon home mini">天赋</a>
+                </li>
+            </ul>
+        </nav>
+        <nav id="android_nav">
+            <div>
+                Dota 2
+            </div>
+            <ul class="list">
+                <li>
+                    <a href="" class="icon home mini">出装</a>
+                </li>
+                <li>
+                    <a href="" class="icon home mini">符文</a>
+                </li>
+                <li>
+                    <a href="" class="icon home mini">天赋</a>
+                </li>
+            </ul>
+        </nav>
+    </div>
+</body>
+</html>
